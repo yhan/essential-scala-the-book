@@ -18,7 +18,7 @@ class FilmAndDirectorSpec extends FlatSpec with Matchers {
     val dieHard = new Film("Die Hard", 1988, 8.3, mcTiernan)
     val huntForRedOctober = new Film("The Hunt for Red October", 1990, 7.6, mcTiernan)
     val thomasCrownAffair = new Film("The Thomas Crown Affair", 1999, 6.8, mcTiernan)
-    
+
     behavior of "Film"
     it should "tell Director's age at the time of release" in {
         unforgiven.ageOfDirector() shouldBe unforgiven.yearOfRelease - eastwood.yearOfBirth
@@ -34,3 +34,4 @@ class FilmAndDirectorSpec extends FlatSpec with Matchers {
         eastwood.name shouldBe "Clint Eastwood"
     }
 }
+

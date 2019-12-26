@@ -1,7 +1,8 @@
 import org.scalatest.{FlatSpec, FunSuite, Matchers}
 import prod.{Cat, OperandTester}
 
-
+import org.scalacheck
+import org.scalatest.Inspectors._
 class CatSpec extends FlatSpec with Matchers{
     /*
         Define an object ChipShop with a method willServe. This method should
@@ -17,4 +18,10 @@ otherwise.
 
         ChipShop.willServe(oswald) shouldBe false
     }
+//
+//    "" should "" in {
+//        forAll (Gen.all) { (a: String, b: String) =>
+//            a.length + b.length should equal ((a + b).length + 1) // Should fail
+//        }
+//    }
 }

@@ -2,7 +2,7 @@ package prod
 
 import cats.implicits._
 
-class Cat(val colour: String, val food: String)
+
 
 
 /*
@@ -15,4 +15,10 @@ otherwise.
         "" == 123
     }
 }
+
+object Request
+
+
+
+
 
