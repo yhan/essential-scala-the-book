@@ -107,6 +107,10 @@ class MiscSpec extends FlatSpec with Matchers {
     import syntax.string._
         "hello".join(" world") shouldBe "hello world"
   }
+
+  "val" should "be eagerly evaluated" in {
+    Father().isHappy shouldBe true
+  }
 }
 
 
@@ -118,3 +122,17 @@ case class Person(age: Int) {
 case class BidRequest(extension: Option[BidRequestExtension])
 
 case class BidRequestExtension(isTopLevel: Option[Boolean])
+
+
+case class Father(){
+  def isHappy: Boolean = {
+    true
+  }
+
+  lazy val random = {
+    println("*******************  I am 42 years old *********************************")
+    42
+  }
+
+}
+//case class Son() extends Father

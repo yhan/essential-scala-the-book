@@ -1,4 +1,4 @@
-import cats.syntax.StrongSyntax
+
 
 package object syntax {
   object person extends PersonSyntax
@@ -25,3 +25,4 @@ final class PersonOps(val self: Person ) {
     Person(self.age + delta)
   }
 }
+

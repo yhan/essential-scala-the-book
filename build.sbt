@@ -22,3 +22,5 @@ libraryDependencies ++= Seq(
 
 // https://mvnrepository.com/artifact/org.scala-lang/scala-actors
 libraryDependencies += "org.scala-lang" % "scala-actors" % "2.11.7"
+libraryDependencies += "com.github.blemale" %% "scaffeine" % "3.1.0" % "compile"
+libraryDependencies += "org.scalaz" %% "scalaz-core" % "7.2.30"
