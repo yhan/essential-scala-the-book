@@ -16,3 +16,5 @@ class AddSpec extends AsyncFunSpec {
             futureSum map { sum => assert(sum == 3) }
         } }
 }
+
+

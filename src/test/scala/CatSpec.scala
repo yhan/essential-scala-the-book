@@ -1,8 +1,5 @@
-import org.scalatest.{FlatSpec, FunSuite, Matchers}
-import prod.{Cat, OperandTester}
-
-import org.scalacheck
-import org.scalatest.Inspectors._
+import org.scalatest.{FlatSpec, Matchers}
+import prod.Cat
 class CatSpec extends FlatSpec with Matchers{
     /*
         Define an object ChipShop with a method willServe. This method should
@@ -25,3 +22,5 @@ otherwise.
 //        }
 //    }
 }
+
+
