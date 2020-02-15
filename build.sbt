@@ -27,7 +27,8 @@ libraryDependencies ++= Seq(
     "org.tpolecat" %% "doobie-postgres"  % "0.8.8",          // Postgres driver 42.2.9 + type mappings.
     "org.tpolecat" %% "doobie-quill"     % "0.8.8",          // Support for Quill 3.4.10
     "org.tpolecat" %% "doobie-specs2"    % "0.8.8" % "test", // Specs2 support for typechecking statements.
-    "org.tpolecat" %% "doobie-scalatest" % "0.8.8" % "test"  // ScalaTest support for typechecking statements.
+    "org.tpolecat" %% "doobie-scalatest" % "0.8.8" % "test",  // ScalaTest support for typechecking statements.
+    "mysql" % "mysql-connector-java" % "8.0.19" % "test"
 )
 
 // https://mvnrepository.com/artifact/org.scala-lang/scala-actors

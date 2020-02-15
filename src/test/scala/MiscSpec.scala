@@ -111,6 +111,10 @@ class MiscSpec extends FlatSpec with Matchers {
   "val" should "be eagerly evaluated" in {
     Father().isHappy shouldBe true
   }
+
+  "case class equality" should "" in {
+    Wrapper(List(1, 42)) shouldBe  Wrapper(List(1, 42))
+  }
 }
 
 
@@ -135,4 +139,4 @@ case class Father(){
   }
 
 }
-//case class Son() extends Father
+case class Wrapper(seq: Seq[Int])
